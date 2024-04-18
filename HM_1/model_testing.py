@@ -14,4 +14,5 @@ y_test = test_data['temperature']
 predictions = model.predict(X_test)
 mse = mean_squared_error(y_test, predictions)
 
-print(f'Mean Squared Error for the test set: {mse}')
+print(f'MSE: {mse}')
+print(f'Predict: {predictions}')

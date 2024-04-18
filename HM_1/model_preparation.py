@@ -19,7 +19,5 @@ model.fit(X_train, y_train)
 predictions = model.predict(X_train)
 mse = mean_squared_error(y_train, predictions)
 
-print(f'Mean Squared Error {mse}')
-
 # Сохранение модели
 joblib.dump(model, '/home/sturmtrooper/data/model/model.pkl')

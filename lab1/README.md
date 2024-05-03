@@ -28,9 +28,9 @@
 
 Скрипт pipeline.sh необходимо запускать непосредственно из каталога lab1
 Порядок запуска файлов:
-data_creation.py
-model_preprocessing.py
-model_preparation.py
-model_testing.py
+- data_creation.py
+- model_preprocessing.py
+- model_preparation.py
+- model_testing.py
 
 Нужно чтобы все файлы имели права на исполнение в том числе csv и pkl

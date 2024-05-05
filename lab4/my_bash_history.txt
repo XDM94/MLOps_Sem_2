@@ -1,3 +1,4 @@
+1167  cd /home/sturmtrooper/data1/
  1168  git init
  1169  dvc init
  1170  git status
@@ -35,4 +36,3 @@
  1202  dvc pull
  1203  git checkout master
  1204  dvc pull
- 1205  history 38 > my_bash_history.txt

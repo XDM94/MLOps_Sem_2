@@ -1,0 +1,38 @@
+ 1168  git init
+ 1169  dvc init
+ 1170  git status
+ 1171  git commit -m "init dvc"
+ 1172  dvc add datasets
+ 1173  cat datasets.dvc
+ 1174  git status
+ 1175  git add .gitignore datasets.dvc
+ 1176  git commit -m "Put datasets under control"
+ 1177  dvc remote add "mydisk" gdrive://1xY0gkFbuobhza2BuBbu8NXLgZykuyU4l?usp=drive_link
+ 1178  dvc remote list
+ 1179  git status
+ 1180  git add .dvc/config
+ 1181  git commit -m "Google disk was added"
+ 1182  dvc push -r mydisk
+ 1183  git status
+ 1184  dvc add datasets
+ 1185  git status
+ 1186  git commit -a -m "replace nan to mean"
+ 1187  dvc push -r mydisk
+ 1188  git status
+ 1189  dvc add datasets
+ 1190  git status
+ 1191  git commit -a -m "add one hot dataset"
+ 1192  dvc push -r mydisk
+ 1193  cd
+ 1194  history 30 > my_bash_history.txt
+ 1195  git log --oneline
+ 1196  cd data1/
+ 1197  git log --oneline
+ 1198  git checkout 8286133
+ 1199  dvc pull
+ 1200  git log --oneline
+ 1201  git checkout 9bcbcef
+ 1202  dvc pull
+ 1203  git checkout master
+ 1204  dvc pull
+ 1205  history 38 > my_bash_history.txt
